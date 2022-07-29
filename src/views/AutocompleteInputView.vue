@@ -1,5 +1,8 @@
 <template>
   <el-card>
+    <template #header>
+      <h3>AutocompleteInput</h3>
+    </template>
     <el-form
       ref="formRef"
       :model="{ text }"
