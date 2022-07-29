@@ -1,15 +1,12 @@
 <template>
-  <el-card>
-    <template #header>
-      <h3>AutocompleteInput</h3>
-    </template>
+  <el-card style="margin-bottom: 15px">
     <el-form
       ref="formRef"
       :model="{ text }"
       label-position="top"
       @submit.prevent.stop
     >
-      <el-form-item prop="text" label="Значение текста">
+      <el-form-item prop="text" label="Форма ввода с подстановкой параметров">
         <autocomplete-input v-model="text" :tree="tree" />
       </el-form-item>
     </el-form>
@@ -22,7 +19,7 @@
       label-position="top"
       @submit.prevent.stop
     >
-      <el-form-item prop="text" label="Значение дерева">
+      <el-form-item prop="text" label="Значение дерева параметров">
         <el-input v-model="treeText" autosize type="textarea" />
 
         <template v-if="hasErrors">
