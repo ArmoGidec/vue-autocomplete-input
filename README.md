@@ -1,4 +1,4 @@
-# SPAS AutocompleteInput 
+# AutocompleteInput 
 
 Компонент с возможностью подсказки и подстановки параметров
 
